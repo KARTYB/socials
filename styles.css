@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url(media/background.gif);
+    background-size: cover; 
+}
+
+.fart {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 5px;
+    color: crimson;
+    text-align: center;
+    position: relative;
+}
+
+.child {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+#Tiktok img{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#Tiktok img:hover {
+    border-color: cyan;
+    transform: scale(1.1)
+}
+
+#Tiktok h4{
+    margin-top: 4px;
+}
+.child {
+    flex: 1;
+}
+
+#Threads h4{
+    margin-top: 4px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.fart::after, .fart::before {
+    content: '';
+    position: absolute;
+    background-image: conic-gradient(from var(--angle), transparent 50%, blue, red);
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 15px;
+    animation: 3s spin linear infinite;
+}
+
+.fart::before{
+    filter: blur(1.5rem);
+    opacity: (0.7);
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+#Threads img{
+    border: 2px solid white;
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#Threads img:hover {
+    border-color: black;
+    transform: scale(1.1)
+}
+
+#Github img{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#Github img:hover {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1)
+}
+
+#Github h4{
+    margin-top: 4px;
+}
+
+#Instagram img{
+    border: 2px solid black;
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#Instagram img:hover {
+    border-color: rgb(255, 6, 234);
+    transform: scale(1.1)
+}
+
+#Instagram h4{
+    margin-top: 4px;
+}
+
+#Snapchat img{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#Snapchat img:hover {
+    border-color: rgb(238, 255, 0);
+    transform: scale(1.1)
+}
+
+#Snapchat h4{
+    margin-top: 4px;
+}
+
+#𝕏 img{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;    
+    transition: ease-in-out 0.2s;
+}
+
+#𝕏 img:hover {
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1)
+}
+
+#𝕏 h4{
+    margin-top: 4px;
+}
+
+footer a:visited{
+    color: crimson;
+}
+
+footer a:link{
+    color:orange;
+}
