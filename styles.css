@@ -44,10 +44,6 @@ body {
     flex: 1;
 }
 
-#Threads h4{
-    margin-top: 4px;
-}
-
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
@@ -81,17 +77,6 @@ body {
     to{
         --angle: 360deg;
     }
-}
-
-#Threads img{
-    border: 2px solid white;
-    border-radius: 15px;    
-    transition: ease-in-out 0.2s;
-}
-
-#Threads img:hover {
-    border-color: black;
-    transform: scale(1.1)
 }
 
 #Github img{
