@@ -124,18 +124,18 @@ body {
     margin-top: 4px;
 }
 
-#𝕏 img{
-    border: 2px solid rgb(255, 255, 255);
+#Youtube img{
+    border: 2px solid whitesmoke;
     border-radius: 15px;    
     transition: ease-in-out 0.2s;
 }
 
-#𝕏 img:hover {
-    border-color: rgb(0, 0, 0);
+#Youtube img:hover {
+    border-color: red;
     transform: scale(1.1)
 }
 
-#𝕏 h4{
+#Youtube h4{
     margin-top: 4px;
 }
 
